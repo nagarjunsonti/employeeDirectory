@@ -9,14 +9,14 @@ function axiosGet(method, url){
     }));
 }
 export function getDirectSubordinates(serachValue){
-    const url = `http://api.additivasia.io/api/v1/assignment/employees/${serachValue}`;
+    const url = `https://api.additivasia.io/api/v1/assignment/employees/${serachValue}`;
     return axiosGet("Get", url);
 }
 
 
 //Given non directory url is not working and giving 404 error so i used same one as Directory url
 export function getNonDirectSubordinates(serachValue){
-    const url = `http://api.additivasia.io/api/v1/assignment/employees/${serachValue}`;
+    const url = `https://api.additivasia.io/api/v1/assignment/employees/${serachValue}`;
     return axiosGet("Get", url);
 
 }
