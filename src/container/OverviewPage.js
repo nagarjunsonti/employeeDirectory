@@ -12,8 +12,6 @@ class OverviewPage extends Component {
     getData = ()=>{
         const {empName} = this.state;
         Promise.all([getDirectSubordinates(empName), getNonDirectSubordinates(empName)]).then((results)=>{
-            console.log(results);
-
             let designation = "";
             let directSub = [];
             let nonDirectSub = [];
