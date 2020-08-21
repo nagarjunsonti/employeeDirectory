@@ -1,38 +1,66 @@
-.App {
+body, html{
+  background-color: green !important;
+}
+.flexCls{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+}
+.homePageContainer h2, .overviewContainer h2{
+  padding: 10px;
+  color: #ddd;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.homePageContainer h3, .overviewContainer h3{
+  color: #691e1e;
+  font-weight: bold
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.homePageContainer .btn-rounded {
+  border-radius: 10px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.homePageContainer .btn-unique {
+  color: #fff;
+  background-color: #880e4f !important;
 }
-
-.App-link {
-  color: #61dafb;
+.homePageContainer button:hover{
+  color: #fff;
+  opacity: 0.5;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.homePageContainer{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.overviewContainer{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+.empNamesDiv{
+  font-size: 17px;
+  font-weight: 700;
+  color: #d1d89a;
+  letter-spacing: 1px;
+  padding: 5px;
+  padding-left: 10px;
+  background-color: #9c9e8545;
+  margin-bottom: 7px;
+}
+.backButtonDiv{
+  text-align: right;  
+}
+.namesdiv{
+  padding: 10px;
+}
+.emptyDataDiv{
+  font-size: 17px;
+  color: #d1d89a;
+  letter-spacing: 1px;
+  padding: 5px;
+  padding-left: 10px;
+  background-color: #9c9e8545;
+  margin-bottom: 7px;
+  
 }
